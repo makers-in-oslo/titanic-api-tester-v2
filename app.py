@@ -12,7 +12,7 @@ import os
 app = Flask(__name__)
 
 import os
-SECRET_KEY = os.urandom(10)
+SECRET_KEY = os.urandom()
 app.config['SECRET_KEY'] = SECRET_KEY
 
 ## Get connection details for APIs
