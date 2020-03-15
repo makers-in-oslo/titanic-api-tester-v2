@@ -26,14 +26,6 @@ class MyForm(FlaskForm):
     sibsp   = StringField('sibsp', validators=[DataRequired()], render_kw={"placeholder": "Write a number..."})
     #sex = SelectField(choices=[('female', 'male')])
 
-## Get connection details for APIs
-#dataprep_api_url = os.environ['DATAPREP_API_URL'] # change to your app name
-
-#@app.route('/', methods=['POST', 'GET'])
-#def index():
-#    form = MyForm()
-#    return render_template('index.html', form=form)
-
 @app.route('/', methods=['GET', 'POST'])
 def dataprediction():
     form = MyForm()
@@ -84,7 +76,6 @@ def dataprediction():
 
         send_request_deployed = requests.request("POST", titanic_prod_app_url, headers=headers, data = data_to_api)
 
-        #send_request_deployed = requests.post(titanic_prod_app_url, data_to_api)
         print(send_request_deployed)
         api_response = send_request_deployed.json()
         print("API Response:")
