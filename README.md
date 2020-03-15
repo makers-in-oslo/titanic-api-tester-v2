@@ -1,8 +1,8 @@
-# Flask / Bootstrap App Repository
+# Titanic API Tester v2
 This project is to test UI frameworks like Bootstrap in a Flask app.
 
 ## Deployment
-Deployed at: https://flask-bootstrap-prod.herokuapp.com/
+Deployed at: 
 
-### Sources
-- Background image: https://www.flickr.com/photos/mikemacmarketing/42271822770
+## Inspiration
+Inspired by the excellent work of bmaelum: https://github.com/bmaelum/flask_bootstrap_website.
